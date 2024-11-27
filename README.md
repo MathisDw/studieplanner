@@ -1,0 +1,2 @@
+# studieplanner
+Planner for exams
