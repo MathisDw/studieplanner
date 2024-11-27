@@ -1,2 +1,3 @@
 # studieplanner
-Planner for exams
+Planner for exams:
+https://mathisdw.github.io/studieplanner/ 
