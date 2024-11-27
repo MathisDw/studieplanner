@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <!-- Metadata en karakterinstellingen voor de pagina -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titel van de pagina -->
+    <title>Examen - Studieplanner</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Studieplanner</h1>
+
+    <!-- Formulier -->
+    <form id="studieForm">
+        <!-- Label en invoerveld voor de datum van studie -->
+        <label for="datum">Datum</label>
+        <input type="date" id="datum" name="datum" required>
+
+        <!-- Label en invoerveld voor het vak -->
+        <label for="vak">Vak</label>
+        <input type="text" id="vak" name="vak" placeholder="Bijv. Wiskunde" required>
+
+        <!-- Label en invoerveld voor de starttijd van de studie -->
+        <label for="starttijd">Starttijd</label>
+        <input type="time" id="starttijd" name="starttijd" required>
+
+        <!-- Label en invoerveld voor de eindtijd van de studie -->
+        <label for="eindtijd">Eindtijd</label>
+        <input type="time" id="eindtijd" name="eindtijd" required>
+
+        <!-- Label en tekstveld voor aanvullende opmerkingen -->
+        <label for="opmerking">Opmerking</label>
+        <textarea id="opmerking" name="opmerking" rows="4" placeholder="Bijv. hoofdstuk 3 lezen"></textarea>
+
+        <!-- Button om het formulier in te dienen -->
+        <button type="submit">Toevoegen</button>
+    </form>
+
+     <!-- Lijst om ingevoerde gegevens weer te geven -->
+     <h2>Studieplanning</h2>
+     <ul id="planningLijst"></ul>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

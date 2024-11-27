@@ -1,0 +1,94 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif; /* Lettertype */
+    color: rgb(0, 0, 0); /* Tekstkleur */
+    background-color: rgb(211, 211, 211); /* Achtergrondkleur */
+    margin: 0; /* Verwijder marge */
+    padding: 20px; /* Padding (ruimte) rondom inhoud */
+}
+
+/* Kop 1 */
+h1, h2 {
+    text-align: center; /* Centreer */
+    color: black; /* Kleur */
+}
+
+
+/* Formulier */
+form {
+    max-width: 400px; /* Maximale breedte */
+    margin: 0 auto; /* Centreer */
+    padding: 30px; /* Padding (ruimte) */
+    background-color: whitesmoke; /* Achtergrondkleur */
+    border: 1px solid grey; /* Rand */
+    border-radius: 8px; /* Ronde hoeken */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schaduw */
+}
+
+/* Labels in formulier */
+label {
+    display: block; /* Labels komen op nieuwe lijnen */
+    margin-bottom: 5px; /* Ruimte onder de label */
+    font-weight: bold; /* Tekst vetgedrukt */
+    color: black; /* Tekstkleur */
+}
+
+/* Invoervelden (input, textarea, en button) */
+input, textarea, button {
+    width: 100%; /* Volledige breedte gebruiken */
+    padding: 10px; /* Padding in de velden */
+    margin-bottom: 15px; /* Ruimte onder elk veld */
+    border: 1px solid grey; /* Rand rond de velden */
+    border-radius: 4px; /* Ronde hoeken */
+}
+
+
+/* knop */
+button {
+    background-color: blue; /* Achtergrondkleur van knop */
+    color: white; /* Witte tekstkleur */
+    font-weight: bold; /* Tekst vetgedrukt */
+    cursor: pointer; /* Verander cursor naar pointer bij hover */
+    border: none; /* Geen rand */
+}
+
+/* Achtergrondkleur knop bij hover */
+button:hover {
+    background-color: blueviolet;
+}
+
+
+
+/* Planninglijst */
+#planningLijst {
+    max-width: 600px; /* Maximale breedte voor de lijst */
+    margin: 20px auto; /* Centreer de lijst en voeg ruimte boven en onder toe */
+    padding: 0; /* Verwijder standaard padding */
+    list-style-type: none; /* Geen opsommingstekens */
+}
+
+/* Scheidingslijn tussen verschillende datums */
+.datum-scheiding {
+    margin: 20px 0; /* Ruimte boven en onder de lijn */
+    font-weight: bold; /* Maak de datumtekst vetgedrukt */
+    color: black; /* Zwarte tekstkleur */
+    text-align: center; /* Centreer de tekst */
+    border-top: 2px solid grey; /* Lijn boven de tekst */
+    padding-top: 10px; /* Ruimte tussen lijn en tekst */
+}
+
+/* Individuele lijstitems */
+.planning-item {
+    background-color: whitesmoke; /* Achtergrondkleur voor items */
+    margin-bottom: 10px; /* Ruimte tussen items */
+    padding: 15px; /* Padding binnen elk item */
+    border: 1px solid grey; /* Rand om de items */
+    border-radius: 6px; /* Ronde hoeken */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schaduw om items */
+}
+
+/* Hover-effect voor lijstitems */
+.planning-item:hover {
+    background-color: lightblue; /* Lichte kleur bij hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Grotere schaduw bij hover */
+}
