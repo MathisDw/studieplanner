@@ -7,7 +7,7 @@ body {
     padding: 20px; /* Padding (ruimte) rondom inhoud */
 }
 
-/* Kop 1 */
+/* Kop 1 & 2 */
 h1, h2 {
     text-align: center; /* Centreer */
     color: black; /* Kleur */
@@ -18,7 +18,7 @@ h1, h2 {
 form {
     max-width: 400px; /* Maximale breedte */
     margin: 0 auto; /* Centreer */
-    padding: 30px; /* Padding (ruimte) */
+    padding: 30px; /* Ruimte binnen element */
     background-color: whitesmoke; /* Achtergrondkleur */
     border: 1px solid grey; /* Rand */
     border-radius: 8px; /* Ronde hoeken */
@@ -36,14 +36,14 @@ label {
 /* Invoervelden (input, textarea, en button) */
 input, textarea, button {
     width: 100%; /* Volledige breedte gebruiken */
-    padding: 10px; /* Padding in de velden */
+    padding: 10px; /* Ruimte binnen de velden */
     margin-bottom: 15px; /* Ruimte onder elk veld */
     border: 1px solid grey; /* Rand rond de velden */
     border-radius: 4px; /* Ronde hoeken */
 }
 
 
-/* knop */
+/* Knop */
 button {
     background-color: blue; /* Achtergrondkleur van knop */
     color: white; /* Witte tekstkleur */
@@ -52,11 +52,10 @@ button {
     border: none; /* Geen rand */
 }
 
-/* Achtergrondkleur knop bij hover */
+/* Hover-effect bij knop */
 button:hover {
     background-color: blueviolet;
 }
-
 
 
 /* Planninglijst */
@@ -81,7 +80,7 @@ button:hover {
 .planning-item {
     background-color: whitesmoke; /* Achtergrondkleur voor items */
     margin-bottom: 10px; /* Ruimte tussen items */
-    padding: 15px; /* Padding binnen elk item */
+    padding: 15px; /* Ruimte binnen elk item */
     border: 1px solid grey; /* Rand om de items */
     border-radius: 6px; /* Ronde hoeken */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schaduw om items */
@@ -91,4 +90,43 @@ button:hover {
 .planning-item:hover {
     background-color: lightblue; /* Lichte kleur bij hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Grotere schaduw bij hover */
+} 
+
+
+/* Resetknop */
+.reset-knop {
+    display: block; /* Maakt de knop een blok-element */
+    margin: 10px auto 20px; /* Centreer de knop */
+    padding: 15px 25px; /* Ruimte binnen de knop */
+    background-color: crimson; /* Rode achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    font-weight: bold; /* Vetgedrukte tekst */
+    font-size: 1.3em; /* Tekstgrootte */
+    border: none; /* Geen rand */
+    border-radius: 6px; /* Ronde hoeken */
+    cursor: pointer; /* Pointer-cursor bij hover */
+    width: auto; /* Volledige breedte */
+    max-width: 200px; /* Maximale breedte */
+}
+
+/* Hover-effect resetknop */
+.reset-knop:hover {
+    background-color: darkred; /* Kleur bij hover */
+}
+
+/* Verwijderknop */
+.verwijder-knop {
+    margin-top: 10px; /* Ruimte boven de knop */
+    padding: 5px 10px; /* Ruimte binnen de knop */
+    background-color: crimson; /* Rode achtergrondkleur */
+    color: white; /* Witte tekstkleur */
+    font-size: 0.9em; /* Kleinere tekstgrootte */
+    border: none; /* Geen rand */
+    border-radius: 4px; /* Ronde hoeken */
+    cursor: pointer; /* Pointer-cursor bij hover */
+}
+
+/* Hover-effect verwijderknop */
+.verwijder-knop:hover {
+    background-color: darkred; /* Kleur bij hover */
 }
