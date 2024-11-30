@@ -4,6 +4,7 @@ let studieGegevens = [];
 // Verwijzingen naar de elementen in de DOM
 const form = document.getElementById('studieForm');
 const planningLijst = document.getElementById('planningLijst');
+const resetButton = document.getElementById('resetButton'); // Verwijzing naar resetknop
 
 // Event listener: Formulier verwerken bij indiening
 form.addEventListener('submit', function(event) {
@@ -61,7 +62,7 @@ function updatePlanningLijst() {
     let vorigeDatum = null; // Houd de vorige datum bij om te bepalen of een scheidingslijn nodig is
 
     // Loop door de gesorteerde array
-    studieGegevens.forEach((item) => {
+    studieGegevens.forEach((item, index) => {
         // Voeg een scheidingslijn toe als de datum verandert
         if (item.datum !== vorigeDatum) {
             const scheiding = document.createElement('li');
@@ -80,9 +81,33 @@ function updatePlanningLijst() {
             <strong>Tijd:</strong> ${item.starttijd} - ${item.eindtijd} | 
             <strong>Opmerking:</strong> ${item.opmerking}
         `;
+
+        // Voeg een verwijderknop toe aan het item
+        const verwijderKnop = document.createElement('button');
+        verwijderKnop.textContent = 'Verwijderen';
+        verwijderKnop.classList.add('verwijder-knop');
+        verwijderKnop.addEventListener('click', function() {
+            verwijderStudieItem(index);
+        });
+
+        li.appendChild(verwijderKnop); // Voeg de knop toe aan het lijstitem
         planningLijst.appendChild(li); // Voeg het lijstitem toe aan de lijst
     });
 }
+
+// Functie om een studie-item te verwijderen
+function verwijderStudieItem(index) {
+    studieGegevens.splice(index, 1); // Verwijder het item uit de array
+    updatePlanningLijst(); // Werk de lijst bij
+}
+
+// Event listener: Resetknop om de lijst te wissen
+resetButton.addEventListener('click', function() {
+    if (confirm('Weet u zeker dat u de hele lijst wilt verwijderen?')) {
+        studieGegevens = []; // Maak de array leeg
+        updatePlanningLijst(); // Werk de lijst bij
+    }
+});
 
 // Functie om de datum leesbaar te formatteren (YYYY-MM-DD naar DD-MM-YYYY)
 function formatDatum(datum) {
